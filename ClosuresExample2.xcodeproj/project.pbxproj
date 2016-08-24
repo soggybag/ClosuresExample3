@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		D8A545091D6CBA5400BB099D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A545081D6CBA5400BB099D /* AppDelegate.swift */; };
-		D8A5450B1D6CBA5400BB099D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D8A5450A1D6CBA5400BB099D /* GameScene.sks */; };
 		D8A5450D1D6CBA5400BB099D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A5450C1D6CBA5400BB099D /* GameScene.swift */; };
 		D8A5450F1D6CBA5400BB099D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A5450E1D6CBA5400BB099D /* GameViewController.swift */; };
 		D8A545121D6CBA5400BB099D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A545101D6CBA5400BB099D /* Main.storyboard */; };
 		D8A545141D6CBA5400BB099D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A545131D6CBA5400BB099D /* Assets.xcassets */; };
 		D8A545171D6CBA5400BB099D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A545151D6CBA5400BB099D /* LaunchScreen.storyboard */; };
+		D8A5451F1D6CBA7500BB099D /* Joystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A5451E1D6CBA7500BB099D /* Joystick.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D8A545051D6CBA5400BB099D /* ClosuresExample2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClosuresExample2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A545081D6CBA5400BB099D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8A5450A1D6CBA5400BB099D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		D8A5450C1D6CBA5400BB099D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		D8A5450E1D6CBA5400BB099D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		D8A545111D6CBA5400BB099D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8A545131D6CBA5400BB099D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8A545161D6CBA5400BB099D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8A545181D6CBA5400BB099D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8A5451E1D6CBA7500BB099D /* Joystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Joystick.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				D8A545081D6CBA5400BB099D /* AppDelegate.swift */,
-				D8A5450A1D6CBA5400BB099D /* GameScene.sks */,
 				D8A5450C1D6CBA5400BB099D /* GameScene.swift */,
 				D8A5450E1D6CBA5400BB099D /* GameViewController.swift */,
+				D8A5451E1D6CBA7500BB099D /* Joystick.swift */,
 				D8A545101D6CBA5400BB099D /* Main.storyboard */,
 				D8A545131D6CBA5400BB099D /* Assets.xcassets */,
 				D8A545151D6CBA5400BB099D /* LaunchScreen.storyboard */,
@@ -128,7 +128,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8A5450B1D6CBA5400BB099D /* GameScene.sks in Resources */,
 				D8A545171D6CBA5400BB099D /* LaunchScreen.storyboard in Resources */,
 				D8A545141D6CBA5400BB099D /* Assets.xcassets in Resources */,
 				D8A545121D6CBA5400BB099D /* Main.storyboard in Resources */,
@@ -143,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8A5450D1D6CBA5400BB099D /* GameScene.swift in Sources */,
+				D8A5451F1D6CBA7500BB099D /* Joystick.swift in Sources */,
 				D8A5450F1D6CBA5400BB099D /* GameViewController.swift in Sources */,
 				D8A545091D6CBA5400BB099D /* AppDelegate.swift in Sources */,
 			);
@@ -294,6 +294,7 @@
 				D8A5451D1D6CBA5400BB099D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

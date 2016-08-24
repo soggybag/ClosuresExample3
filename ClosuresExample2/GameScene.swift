@@ -9,37 +9,42 @@
 import SpriteKit
 
 class GameScene: SKScene {
+    
+    let joystick = Joystick()
+    let box = SKSpriteNode(color: UIColor.redColor(), size: CGSize(width: 40, height: 40))
+    
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!"
-        myLabel.fontSize = 45
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
         
-        self.addChild(myLabel)
+        addChild(joystick)
+        
+        setup()
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-       /* Called when a touch begins */
-        
-        for touch in touches {
-            let location = touch.locationInNode(self)
-            
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
-        }
+        /* Called when a touch begins */
+        joystick.show(touches.first!)
     }
-   
+    
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        joystick.move(touches.first!)
+    }
+    
+    
+    func setup() {
+        physicsBody = SKPhysicsBody(edgeLoopFromRect: frame)
+        
+        addChild(box)
+        box.physicsBody = SKPhysicsBody(rectangleOfSize: box.size)
+        box.position.x = size.width / 2
+        box.position.y = size.height / 2
+        
+        physicsWorld.gravity = CGVector(dx: 0, dy: 0)
+    }
+    
+    
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
+        
     }
 }
